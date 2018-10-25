@@ -31,10 +31,11 @@ if have_library('stdc++')
   create_makefile('libcld2')
 end
 
+$CXXFLAGS += "-Wno-narrowing"
+
 # to clean up object files under internal subdirectory.
 open('Makefile', 'a') do |f|
   f.write <<EOS
-
   CLEANOBJS := $(CLEANOBJS) internal/*.#{CONFIG["OBJEXT"]}
 EOS
 end
