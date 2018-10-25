@@ -15,7 +15,7 @@ CLD.detect_language("plus ça change, plus c'est la même chose")
 
 Verbose results (optional, defaulted to false): also return up to 3 top languages detected for the document and their respective scores, as well as individual results for each chunk from the input text.
 CLD.detect_language("How much wood would a woodchuck chuck", true)
-# => {:name=>"ENGLISH", :code=>"en", :reliable=>true, :top_langs=>[{:code=>"en", :percent=>97, :score=>943.0}], :chunks=>[{:content=>"How much wood would a woodchuck chuck", :code=>"un"}]} 
+# => {:name=>"ENGLISH", :code=>"en", :reliable=>true, :top_langs=>[{:code=>"en", :percent=>97, :score=>943.0}], :chunks=>[{:content=>"How much wood would a woodchuck chuck", :code=>"un"}]}
 
 CLD.detect_language("हैदराबाद उच्चार ऐका सहाय्य माहिती तेलुगू హైదరాబాదు حیدر آباد", true)
 # => {:name=>"MARATHI", :code=>"mr", :reliable=>true, :top_langs=>[{:code=>"mr", :percent=>69, :score=>387.0}, {:code=>"te", :percent=>18, :score=>1024.0}], :chunks=>[{:content=>"हैदराबाद उच्चार ऐका सहाय्य माहिती तेलुगू ", :code=>"mr"}, {:content=>"హైదరాబాదు ", :code=>"te"}, {:content=>"حیدر آباد", :code=>"un"}]}
@@ -28,7 +28,7 @@ CLD.detect_language("हैदराबाद उच्चार ऐका स�
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cld2', require 'cld'
+gem 'cld-2018', require 'cld'
 ```
 
 And then execute:
